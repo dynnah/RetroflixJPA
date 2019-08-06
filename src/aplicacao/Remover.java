@@ -9,8 +9,10 @@ public class Remover {
 		System.out.println("Removendo...");
 
 		try {
+			Fachada.openManager();
 			Fachada.excluirCliente("333.333.333-33");
 			Fachada.excluirCliente("555.555.555-55");
+			Fachada.closeManager();
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}

@@ -11,6 +11,9 @@ package fachada;
 import java.time.LocalDate;
 import java.util.List;
 
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 import javax.persistence.Query;
 
 import aplicacao.Cadastrar;
@@ -34,6 +37,19 @@ public class Fachada {
 	private static DAOFilme daofilme = new DAOFilme();
 	private static DAOGenero daogenero = new DAOGenero();
 	private static DAOPedido daopedido = new DAOPedido();
+	protected static EntityManager manager;
+	static EntityManagerFactory factory = Persistence.createEntityManagerFactory("retroflix-eclipselink");
+	
+	public static void openManager() {
+		manager = factory.createEntityManager();
+		manager.getTransaction().begin();
+	}
+	
+	public static void closeManager() {
+		manager.getTransaction().commit();
+		manager.close();
+		factory.close();
+	}
 
 	public static void inicializar(){
 		DAO.open();
@@ -340,3 +356,6 @@ public class Fachada {
 	//		}
 	//		return texto;
 	//	}
+
+// consulta
+
