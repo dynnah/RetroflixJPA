@@ -11,6 +11,11 @@ package fachada;
 import java.time.LocalDate;
 import java.util.List;
 
+import javax.persistence.Query;
+
+import aplicacao.Cadastrar;
+import aplicacao.Atualizar;
+//import aplicacao.Teste;
 import daojpa.DAO;
 import daojpa.DAOAtor;
 import daojpa.DAOCliente;
@@ -94,7 +99,7 @@ public class Fachada {
 			DAO.rollback();
 			throw new Exception("Cliente inexistente");
 		}
-		
+
 		p = new Pedido(codPedido, c, f, dataPed);
 		daopedido.create(p);
 		DAO.commit();
@@ -280,7 +285,7 @@ public class Fachada {
 			DAO.commit();
 		}
 	}
-
+}
 	/**********************************************************
 	 * 
 	 * CONSULTAS 
@@ -335,5 +340,3 @@ public class Fachada {
 	//		}
 	//		return texto;
 	//	}
-
-}
