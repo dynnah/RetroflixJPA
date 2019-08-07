@@ -2,15 +2,16 @@ package aplicacao;
 
 import fachada.Fachada;
 
-public class Remover {
+public class Consultar {
 
-	public Remover() {
+	public Consultar() {
 		Fachada.inicializar();
-		System.out.println("Removendo...");
+		System.out.println("Consultando...");
 
 		try {
-			Fachada.excluirCliente("333.333.333-33");
-			Fachada.excluirCliente("555.555.555-55");
+			Fachada.consultarAtoresPorParteNome("o");
+			Fachada.consultarFilmesPorCliente("777.777.777-77");
+			Fachada.consultarGeneroPorAtor("Tom Holland");		
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
@@ -18,8 +19,10 @@ public class Remover {
 		Fachada.finalizar();
 		System.out.println("Programa finalizado");
 	}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		new Remover();
+		new Consultar();
 	}
+
 }

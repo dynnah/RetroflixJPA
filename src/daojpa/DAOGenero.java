@@ -1,5 +1,7 @@
 package daojpa;
 
+import java.util.List;
+
 import javax.persistence.NoResultException;
 import javax.persistence.Query;
 
@@ -16,5 +18,14 @@ public class DAOGenero extends DAO<Genero>{
 		}catch(NoResultException e){
 			return null;
 		}
+	}
+	
+	//GENEROS
+	
+	public static List<Genero> consultarGeneroPorAtor(String nome) {
+		List<Genero> generos;
+		Query query = manager.createQuery("SELECT f.generos from Filme f JOIN Ator a ON f.atores.nome = a.nome where a.nome = '" + nome + "'");
+		generos = query.getResultList();
+		return generos;
 	}
 }

@@ -1,6 +1,8 @@
 package daojpa;
 
 
+import java.util.List;
+
 import javax.persistence.NoResultException;
 import javax.persistence.Query;
 
@@ -17,5 +19,14 @@ public class DAOFilme extends DAO<Filme>{
 		}catch(NoResultException e){
 			return null;
 		}
+	}
+
+	//CONSULTAS
+
+	public static List<Filme> consultarFilmesPorCliente(String cli) {
+		List<Filme> filmes;
+		Query query = manager.createQuery("SELECT p.filmes from Pedido p JOIN Cliente c ON p.cliente.cpf = c.cpf where c.cpf = '" + cli + "'");
+		filmes = query.getResultList();
+		return filmes;
 	}
 }

@@ -18,7 +18,6 @@ import javax.persistence.Query;
 
 import aplicacao.Cadastrar;
 import aplicacao.Atualizar;
-//import aplicacao.Teste;
 import daojpa.DAO;
 import daojpa.DAOAtor;
 import daojpa.DAOCliente;
@@ -39,12 +38,12 @@ public class Fachada {
 	private static DAOPedido daopedido = new DAOPedido();
 	protected static EntityManager manager;
 	static EntityManagerFactory factory = Persistence.createEntityManagerFactory("retroflix-eclipselink");
-	
+
 	public static void openManager() {
 		manager = factory.createEntityManager();
 		manager.getTransaction().begin();
 	}
-	
+
 	public static void closeManager() {
 		manager.getTransaction().commit();
 		manager.close();
@@ -301,61 +300,107 @@ public class Fachada {
 			DAO.commit();
 		}
 	}
+
+/**********************************************************
+ * 
+ * CONSULTAS 
+ * 
+ **********************************************************/
+
+	public static void consultarAtoresPorParteNome(String caracteres) {
+		List<Ator> atores = daoator.consultarAtoresPorParteNome(caracteres);
+
+		if(atores.isEmpty())
+			System.out.println("Consulta vazia.");
+		else { 
+			for(Ator a :  atores) 
+				System.out.println(a.toString());
+		}	  
+	}
+
+
+	public static void consultarFilmesPorCliente(String cli) {
+		List<Filme> filmes = daofilme.consultarFilmesPorCliente(cli);
+		
+	if(filmes.isEmpty())
+		System.out.println("Consulta vazia.");
+	else { 
+		for(Filme f :  filmes) 
+			System.out.println(f.toString());
+		}
+	}
+	
+	public static void consultarGeneroPorAtor(String nome) {
+		List<Genero> generos = daogenero.consultarGeneroPorAtor(nome);
+		
+		if(generos.isEmpty())
+			System.out.println("Consulta vazia.");
+		else { 
+			for(Genero g : generos) 
+				System.out.println(g.toString());
+			}
+		}
+
+public static void consultarTotalCliente(String cli) {
+	Double total = daopedido.consultarTotalCliente(cli);
+	
+	if(total == null)
+		System.out.println("Consulta vazia.");
+	else { 
+		System.out.println(total);
+		}
+	}
 }
-	/**********************************************************
-	 * 
-	 * CONSULTAS 
-	 * 
-	 **********************************************************/
 
-	//	public static String consultarAtoresPorParteNome(String caracteres) {
-	//		List<Ator> result = daoator.consultarAtoresPorParteNome(caracteres);
-	//
-	//		String texto = "\nConsultar atores por parte do nome:"+caracteres;
-	//		if (result.isEmpty())  
-	//			texto += "consulta vazia";
-	//		else 
-	//			for(Ator a: result)texto += "\n" + a;
-	//		return texto;
-	//	}
-	//	
-	//	public static String consultarFilmesPorCliente(String cli) {
-	//		List<Filme> result = daofilme.consultarFilmesPorCliente(cli);
-	//		
-	//		String texto = "\nConsultar filmes por cliente:"+cli;
-	//		if (result.isEmpty())
-	//			texto += "consulta vazia";
-	//		else
-	//			for(Filme f: result)texto += "\n" + f;
-	//		return texto;
-	//	}
-	//	
-	//	public static String consultarGeneroPorAtor(String nome) {
-	//		List<Genero> result = daogenero.consultarGeneroPorAtor(nome);
-	//		
-	//		String texto = "\nConsultar generos por ator:"+nome;
-	//		if (result.isEmpty())
-	//			texto += "consulta vazia";
-	//		else
-	//			for(Genero g: result)texto += "\n" + g.getNome();
-	//		return texto;
-	//	}
-	//	
-	//	public static String consultarTotalCliente(String cli) {
-	//		List<Filme> result = daofilme.consultarTotalCliente(cli);
-	//		
-	//		String texto = "\nConsultar total do cliente:"+cli;
-	//		double sum = 0;
-	//		if (result.isEmpty())
-	//			texto += "consulta vazia";
-	//		else {
-	//			for(Filme f: result) {
-	//				sum += f.getPreco();
-	//			}
-	//			texto += "\n" + sum;
-	//		}
-	//		return texto;
-	//	}
+// CONSULTAS DAO
+//
+//	public static String consultarAtoresPorParteNome(String caracteres) {
+//		List<Ator> result = daoator.consultarAtoresPorParteNome(caracteres);
+//
+//		String texto = "\nConsultar atores por parte do nome:"+caracteres;
+//		if (result.isEmpty())  
+//			texto += "consulta vazia";
+//		else 
+//			for(Ator a: result)texto += "\n" + a;
+//		return texto;
+//	}
+////	
+//	public static String consultarFilmesPorCliente(String cli) {
+//		List<Filme> result = daofilme.consultarFilmesPorCliente(cli);
+//		
+//		String texto = "\nConsultar filmes por cliente:"+cli;
+//		if (result.isEmpty())
+//			texto += "consulta vazia";
+//		else
+//			for(Filme f: result)texto += "\n" + f;
+//		return texto;
+//	}
+//	
+//	public static String consultarGeneroPorAtor(String nome) {
+//		List<Genero> result = daogenero.consultarGeneroPorAtor(nome);
+//		
+//		String texto = "\nConsultar generos por ator:"+nome;
+//		if (result.isEmpty())
+//			texto += "consulta vazia";
+//		else
+//			for(Genero g: result)texto += "\n" + g.getNome();
+//		return texto;
+//	}
+//	
+//	public static String consultarTotalCliente(String cli) {
+//		List<Filme> result = daofilme.consultarTotalCliente(cli);
+//		
+//		String texto = "\nConsultar total do cliente:"+cli;
+//		double sum = 0;
+//		if (result.isEmpty())
+//			texto += "consulta vazia";
+//		else {
+//			for(Filme f: result) {
+//				sum += f.getPreco();
+//			}
+//			texto += "\n" + sum;
+//		}
+//		return texto;
+//	}
 
-// consulta
 

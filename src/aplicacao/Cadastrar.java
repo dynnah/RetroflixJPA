@@ -10,7 +10,6 @@ public class Cadastrar {
 		System.out.println("Cadastrando...");
 		
 		try {
-			Fachada.openManager();
 			Fachada.cadastrarAtor("Tom Holland","1996-06-01","Inglesa");
 			Fachada.cadastrarAtor("Mark Ruffalo","1967-11-22","Americana");
 			Fachada.cadastrarAtor("Letitia Wright","1993-10-31","Inglesa");
@@ -40,7 +39,7 @@ public class Cadastrar {
 			Fachada.cadastrarPedido("3", "999.999.999-99", "Captain Marvel", "03/08/2019");
 			Fachada.cadastrarPedido("4", "333.333.333-33", "X-Men: Apocalypse", "03/08/2019");
 			Fachada.cadastrarPedido("5", "555.555.555-55", "Avengers: Endgame", "03/08/2019");
-			Fachada.closeManager();
+			
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		  }

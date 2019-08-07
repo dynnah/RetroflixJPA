@@ -16,4 +16,13 @@ public class DAOPedido extends DAO<Pedido>{
 			return null;
 		}
 	}
+	
+	//CONSULTAS
+	
+	public static Double consultarTotalCliente(String cli) {
+		Double total;
+		Query query = manager.createQuery("Select SUM(p.filmes.preco) FROM Pedido p where p.cliente.cpf = '" + cli + "'");
+		total = (Double) query.getSingleResult();
+		return total;
+	}
 }
