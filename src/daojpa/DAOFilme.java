@@ -7,6 +7,7 @@ import javax.persistence.NoResultException;
 import javax.persistence.Query;
 
 import modelo.Filme;
+import modelo.Genero;
 
 public class DAOFilme extends DAO<Filme>{
 
@@ -21,12 +22,19 @@ public class DAOFilme extends DAO<Filme>{
 		}
 	}
 
-	//CONSULTAS
+	//CONSULTA
 
 	public static List<Filme> consultarFilmesPorCliente(String cli) {
 		List<Filme> filmes;
-		Query query = manager.createQuery("SELECT p.filmes from Pedido p JOIN Cliente c ON p.cliente.cpf = c.cpf where c.cpf = '" + cli + "'");
+		Query query = manager.createQuery("SELECT f from Filme f JOIN f.pedidos p JOIN p.cliente c where c.cpf = '" + cli + "'");
 		filmes = query.getResultList();
 		return filmes;
+	}
+	
+	public static List<Genero> consultarGeneroPorAtor(String nome) {
+		List<Genero> generos;
+		Query query = manager.createQuery("SELECT f.generos from Filme f JOIN f.atores a where a.nome = '" + nome + "'");
+		generos = query.getResultList();
+		return generos;
 	}
 }

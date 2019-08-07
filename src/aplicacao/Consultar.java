@@ -11,7 +11,7 @@ public class Consultar {
 		try {
 			Fachada.consultarAtoresPorParteNome("o");
 			Fachada.consultarFilmesPorCliente("777.777.777-77");
-			Fachada.consultarGeneroPorAtor("Tom Holland");		
+			Fachada.consultarGeneroPorAtor("Tom Holland");
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}

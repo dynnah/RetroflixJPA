@@ -331,7 +331,7 @@ public class Fachada {
 	}
 	
 	public static void consultarGeneroPorAtor(String nome) {
-		List<Genero> generos = daogenero.consultarGeneroPorAtor(nome);
+		List<Genero> generos = daofilme.consultarGeneroPorAtor(nome);
 		
 		if(generos.isEmpty())
 			System.out.println("Consulta vazia.");
@@ -341,15 +341,6 @@ public class Fachada {
 			}
 		}
 
-public static void consultarTotalCliente(String cli) {
-	Double total = daopedido.consultarTotalCliente(cli);
-	
-	if(total == null)
-		System.out.println("Consulta vazia.");
-	else { 
-		System.out.println(total);
-		}
-	}
 }
 
 // CONSULTAS DAO

@@ -20,12 +20,6 @@ public class DAOGenero extends DAO<Genero>{
 		}
 	}
 	
-	//GENEROS
+	//CONSULTA
 	
-	public static List<Genero> consultarGeneroPorAtor(String nome) {
-		List<Genero> generos;
-		Query query = manager.createQuery("SELECT f.generos from Filme f JOIN Ator a ON f.atores.nome = a.nome where a.nome = '" + nome + "'");
-		generos = query.getResultList();
-		return generos;
-	}
 }

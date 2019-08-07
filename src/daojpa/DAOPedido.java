@@ -1,8 +1,11 @@
 package daojpa;
 
+import java.util.List;
+
 import javax.persistence.NoResultException;
 import javax.persistence.Query;
 
+import modelo.Filme;
 import modelo.Pedido;
 
 public class DAOPedido extends DAO<Pedido>{
@@ -19,10 +22,5 @@ public class DAOPedido extends DAO<Pedido>{
 	
 	//CONSULTAS
 	
-	public static Double consultarTotalCliente(String cli) {
-		Double total;
-		Query query = manager.createQuery("Select SUM(p.filmes.preco) FROM Pedido p where p.cliente.cpf = '" + cli + "'");
-		total = (Double) query.getSingleResult();
-		return total;
-	}
+	
 }

@@ -1,71 +1,149 @@
-[EL Fine]: server: 2019-08-06 18:41:26.364--Thread(Thread[AWT-EventQueue-0,6,main])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
-[EL Config]: metadata: 2019-08-06 18:41:26.484--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class modelo.Genero] is set to [FIELD].
-[EL Config]: metadata: 2019-08-06 18:41:26.503--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the many to many mapping element [field filmes] is being defaulted to: class modelo.Filme.
-[EL Config]: metadata: 2019-08-06 18:41:26.503--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class modelo.Ator] is set to [FIELD].
-[EL Config]: metadata: 2019-08-06 18:41:26.504--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the many to many mapping element [field filmes] is being defaulted to: class modelo.Filme.
-[EL Config]: metadata: 2019-08-06 18:41:26.506--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class modelo.Filme] is set to [FIELD].
-[EL Config]: metadata: 2019-08-06 18:41:26.506--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the many to many mapping element [field generos] is being defaulted to: class modelo.Genero.
-[EL Config]: metadata: 2019-08-06 18:41:26.507--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the many to many mapping element [field atores] is being defaulted to: class modelo.Ator.
-[EL Config]: metadata: 2019-08-06 18:41:26.507--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the many to many mapping element [field pedidos] is being defaulted to: class modelo.Pedido.
-[EL Config]: metadata: 2019-08-06 18:41:26.508--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class modelo.Pedido] is set to [FIELD].
-[EL Config]: metadata: 2019-08-06 18:41:26.509--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the many to one mapping element [field cliente] is being defaulted to: class modelo.Cliente.
-[EL Config]: metadata: 2019-08-06 18:41:26.509--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the many to many mapping element [field filmes] is being defaulted to: class modelo.Filme.
-[EL Config]: metadata: 2019-08-06 18:41:26.509--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The access type for the persistent class [class modelo.Cliente] is set to [FIELD].
-[EL Config]: metadata: 2019-08-06 18:41:26.51--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The target entity (reference) class for the one to many mapping element [field pedidos] is being defaulted to: class modelo.Pedido.
-[EL Config]: metadata: 2019-08-06 18:41:26.51--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class modelo.Genero] is being defaulted to: Genero.
-[EL Config]: metadata: 2019-08-06 18:41:26.511--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The table name for entity [class modelo.Genero] is being defaulted to: GENERO.
-[EL Config]: metadata: 2019-08-06 18:41:26.522--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [nome] is being defaulted to: NOME.
-[EL Config]: metadata: 2019-08-06 18:41:26.524--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class modelo.Ator] is being defaulted to: Ator.
-[EL Config]: metadata: 2019-08-06 18:41:26.524--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The table name for entity [class modelo.Ator] is being defaulted to: ATOR.
-[EL Config]: metadata: 2019-08-06 18:41:26.525--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [dataNasc] is being defaulted to: DATANASC.
-[EL Config]: metadata: 2019-08-06 18:41:26.526--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [nome] is being defaulted to: NOME.
-[EL Config]: metadata: 2019-08-06 18:41:26.526--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [nacionalidade] is being defaulted to: NACIONALIDADE.
-[EL Config]: metadata: 2019-08-06 18:41:26.526--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class modelo.Filme] is being defaulted to: Filme.
-[EL Config]: metadata: 2019-08-06 18:41:26.527--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The table name for entity [class modelo.Filme] is being defaulted to: FILME.
-[EL Config]: metadata: 2019-08-06 18:41:26.527--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [preco] is being defaulted to: PRECO.
-[EL Config]: metadata: 2019-08-06 18:41:26.528--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [lancamento] is being defaulted to: LANCAMENTO.
-[EL Config]: metadata: 2019-08-06 18:41:26.528--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [titulo] is being defaulted to: TITULO.
-[EL Config]: metadata: 2019-08-06 18:41:26.528--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class modelo.Pedido] is being defaulted to: Pedido.
-[EL Config]: metadata: 2019-08-06 18:41:26.528--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The table name for entity [class modelo.Pedido] is being defaulted to: PEDIDO.
-[EL Config]: metadata: 2019-08-06 18:41:26.529--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [statusPagamento] is being defaulted to: STATUSPAGAMENTO.
-[EL Config]: metadata: 2019-08-06 18:41:26.529--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [codPedido] is being defaulted to: CODPEDIDO.
-[EL Config]: metadata: 2019-08-06 18:41:26.529--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [dataPedido] is being defaulted to: DATAPEDIDO.
-[EL Config]: metadata: 2019-08-06 18:41:26.53--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The alias name for the entity class [class modelo.Cliente] is being defaulted to: Cliente.
-[EL Config]: metadata: 2019-08-06 18:41:26.53--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The table name for entity [class modelo.Cliente] is being defaulted to: CLIENTE.
-[EL Config]: metadata: 2019-08-06 18:41:26.53--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [cpf] is being defaulted to: CPF.
-[EL Config]: metadata: 2019-08-06 18:41:26.531--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [nome] is being defaulted to: NOME.
-[EL Config]: metadata: 2019-08-06 18:41:26.531--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [email] is being defaulted to: EMAIL.
-[EL Config]: metadata: 2019-08-06 18:41:26.531--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The column name for element [cep] is being defaulted to: CEP.
-[EL Config]: metadata: 2019-08-06 18:41:26.542--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The join table name for the many to many mapping [field filmes] is being defaulted to: GENERO_FILME.
-[EL Config]: metadata: 2019-08-06 18:41:26.543--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The source primary key column name for the many to many mapping [field filmes] is being defaulted to: NOME.
-[EL Config]: metadata: 2019-08-06 18:41:26.543--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The source foreign key column name for the many to many mapping [filmes] is being defaulted to: generos_NOME.
-[EL Config]: metadata: 2019-08-06 18:41:26.544--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The target primary key column name for the many to many mapping [field filmes] is being defaulted to: TITULO.
-[EL Config]: metadata: 2019-08-06 18:41:26.544--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The target foreign key column name for the many to many mapping [filmes] is being defaulted to: filmes_TITULO.
-[EL Config]: metadata: 2019-08-06 18:41:26.544--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The join table name for the many to many mapping [field filmes] is being defaulted to: ATOR_FILME.
-[EL Config]: metadata: 2019-08-06 18:41:26.544--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The source primary key column name for the many to many mapping [field filmes] is being defaulted to: NOME.
-[EL Config]: metadata: 2019-08-06 18:41:26.544--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The source foreign key column name for the many to many mapping [filmes] is being defaulted to: atores_NOME.
-[EL Config]: metadata: 2019-08-06 18:41:26.544--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The target primary key column name for the many to many mapping [field filmes] is being defaulted to: TITULO.
-[EL Config]: metadata: 2019-08-06 18:41:26.545--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The target foreign key column name for the many to many mapping [filmes] is being defaulted to: filmes_TITULO.
-[EL Config]: metadata: 2019-08-06 18:41:26.549--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The primary key column name for the mapping element [field cliente] is being defaulted to: CPF.
-[EL Config]: metadata: 2019-08-06 18:41:26.549--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The foreign key column name for the mapping element [cliente] is being defaulted to: CLIENTE_CPF.
-[EL Config]: metadata: 2019-08-06 18:41:26.55--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The join table name for the many to many mapping [field filmes] is being defaulted to: PEDIDO_FILME.
-[EL Config]: metadata: 2019-08-06 18:41:26.55--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The source primary key column name for the many to many mapping [field filmes] is being defaulted to: CODPEDIDO.
-[EL Config]: metadata: 2019-08-06 18:41:26.55--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The source foreign key column name for the many to many mapping [filmes] is being defaulted to: pedidos_CODPEDIDO.
-[EL Config]: metadata: 2019-08-06 18:41:26.551--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The target primary key column name for the many to many mapping [field filmes] is being defaulted to: TITULO.
-[EL Config]: metadata: 2019-08-06 18:41:26.551--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--The target foreign key column name for the many to many mapping [filmes] is being defaulted to: filmes_TITULO.
-[EL Info]: 2019-08-06 18:41:26.63--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--EclipseLink, version: Eclipse Persistence Services - 2.7.3.v20180807-4be1041
-[EL Fine]: connection: 2019-08-06 18:41:26.715--Thread(Thread[AWT-EventQueue-0,6,main])--Detected database platform: org.eclipse.persistence.platform.database.PostgreSQLPlatform
-[EL Config]: connection: 2019-08-06 18:41:26.727--ServerSession(1607627033)--Connection(1531331055)--Thread(Thread[AWT-EventQueue-0,6,main])--connecting(DatabaseLogin(
+[EL Fine]: server: 2019-08-07 14:43:42.327--Thread(Thread[main,5,main])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
+[EL Config]: metadata: 2019-08-07 14:43:42.437--ServerSession(336484883)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Genero] is set to [FIELD].
+[EL Config]: metadata: 2019-08-07 14:43:42.455--ServerSession(336484883)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to many mapping element [field filmes] is being defaulted to: class modelo.Filme.
+[EL Config]: metadata: 2019-08-07 14:43:42.456--ServerSession(336484883)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Ator] is set to [FIELD].
+[EL Config]: metadata: 2019-08-07 14:43:42.457--ServerSession(336484883)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to many mapping element [field filmes] is being defaulted to: class modelo.Filme.
+[EL Config]: metadata: 2019-08-07 14:43:42.458--ServerSession(336484883)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Filme] is set to [FIELD].
+[EL Config]: metadata: 2019-08-07 14:43:42.458--ServerSession(336484883)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to many mapping element [field generos] is being defaulted to: class modelo.Genero.
+[EL Config]: metadata: 2019-08-07 14:43:42.458--ServerSession(336484883)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to many mapping element [field atores] is being defaulted to: class modelo.Ator.
+[EL Config]: metadata: 2019-08-07 14:43:42.459--ServerSession(336484883)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to many mapping element [field pedidos] is being defaulted to: class modelo.Pedido.
+[EL Config]: metadata: 2019-08-07 14:43:42.459--ServerSession(336484883)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Pedido] is set to [FIELD].
+[EL Config]: metadata: 2019-08-07 14:43:42.46--ServerSession(336484883)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field cliente] is being defaulted to: class modelo.Cliente.
+[EL Config]: metadata: 2019-08-07 14:43:42.461--ServerSession(336484883)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to many mapping element [field filmes] is being defaulted to: class modelo.Filme.
+[EL Config]: metadata: 2019-08-07 14:43:42.461--ServerSession(336484883)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Cliente] is set to [FIELD].
+[EL Config]: metadata: 2019-08-07 14:43:42.462--ServerSession(336484883)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field pedidos] is being defaulted to: class modelo.Pedido.
+[EL Config]: metadata: 2019-08-07 14:43:42.462--ServerSession(336484883)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Genero] is being defaulted to: Genero.
+[EL Config]: metadata: 2019-08-07 14:43:42.464--ServerSession(336484883)--Thread(Thread[main,5,main])--The table name for entity [class modelo.Genero] is being defaulted to: GENERO.
+[EL Config]: metadata: 2019-08-07 14:43:42.474--ServerSession(336484883)--Thread(Thread[main,5,main])--The column name for element [nome] is being defaulted to: NOME.
+[EL Config]: metadata: 2019-08-07 14:43:42.474--ServerSession(336484883)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Ator] is being defaulted to: Ator.
+[EL Config]: metadata: 2019-08-07 14:43:42.475--ServerSession(336484883)--Thread(Thread[main,5,main])--The table name for entity [class modelo.Ator] is being defaulted to: ATOR.
+[EL Config]: metadata: 2019-08-07 14:43:42.475--ServerSession(336484883)--Thread(Thread[main,5,main])--The column name for element [dataNasc] is being defaulted to: DATANASC.
+[EL Config]: metadata: 2019-08-07 14:43:42.476--ServerSession(336484883)--Thread(Thread[main,5,main])--The column name for element [nome] is being defaulted to: NOME.
+[EL Config]: metadata: 2019-08-07 14:43:42.476--ServerSession(336484883)--Thread(Thread[main,5,main])--The column name for element [nacionalidade] is being defaulted to: NACIONALIDADE.
+[EL Config]: metadata: 2019-08-07 14:43:42.476--ServerSession(336484883)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Filme] is being defaulted to: Filme.
+[EL Config]: metadata: 2019-08-07 14:43:42.477--ServerSession(336484883)--Thread(Thread[main,5,main])--The table name for entity [class modelo.Filme] is being defaulted to: FILME.
+[EL Config]: metadata: 2019-08-07 14:43:42.477--ServerSession(336484883)--Thread(Thread[main,5,main])--The column name for element [preco] is being defaulted to: PRECO.
+[EL Config]: metadata: 2019-08-07 14:43:42.477--ServerSession(336484883)--Thread(Thread[main,5,main])--The column name for element [lancamento] is being defaulted to: LANCAMENTO.
+[EL Config]: metadata: 2019-08-07 14:43:42.478--ServerSession(336484883)--Thread(Thread[main,5,main])--The column name for element [titulo] is being defaulted to: TITULO.
+[EL Config]: metadata: 2019-08-07 14:43:42.478--ServerSession(336484883)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Pedido] is being defaulted to: Pedido.
+[EL Config]: metadata: 2019-08-07 14:43:42.478--ServerSession(336484883)--Thread(Thread[main,5,main])--The table name for entity [class modelo.Pedido] is being defaulted to: PEDIDO.
+[EL Config]: metadata: 2019-08-07 14:43:42.479--ServerSession(336484883)--Thread(Thread[main,5,main])--The column name for element [statusPagamento] is being defaulted to: STATUSPAGAMENTO.
+[EL Config]: metadata: 2019-08-07 14:43:42.479--ServerSession(336484883)--Thread(Thread[main,5,main])--The column name for element [codPedido] is being defaulted to: CODPEDIDO.
+[EL Config]: metadata: 2019-08-07 14:43:42.479--ServerSession(336484883)--Thread(Thread[main,5,main])--The column name for element [dataPedido] is being defaulted to: DATAPEDIDO.
+[EL Config]: metadata: 2019-08-07 14:43:42.48--ServerSession(336484883)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Cliente] is being defaulted to: Cliente.
+[EL Config]: metadata: 2019-08-07 14:43:42.48--ServerSession(336484883)--Thread(Thread[main,5,main])--The table name for entity [class modelo.Cliente] is being defaulted to: CLIENTE.
+[EL Config]: metadata: 2019-08-07 14:43:42.48--ServerSession(336484883)--Thread(Thread[main,5,main])--The column name for element [cpf] is being defaulted to: CPF.
+[EL Config]: metadata: 2019-08-07 14:43:42.481--ServerSession(336484883)--Thread(Thread[main,5,main])--The column name for element [nome] is being defaulted to: NOME.
+[EL Config]: metadata: 2019-08-07 14:43:42.481--ServerSession(336484883)--Thread(Thread[main,5,main])--The column name for element [email] is being defaulted to: EMAIL.
+[EL Config]: metadata: 2019-08-07 14:43:42.481--ServerSession(336484883)--Thread(Thread[main,5,main])--The column name for element [cep] is being defaulted to: CEP.
+[EL Config]: metadata: 2019-08-07 14:43:42.496--ServerSession(336484883)--Thread(Thread[main,5,main])--The join table name for the many to many mapping [field filmes] is being defaulted to: GENERO_FILME.
+[EL Config]: metadata: 2019-08-07 14:43:42.497--ServerSession(336484883)--Thread(Thread[main,5,main])--The source primary key column name for the many to many mapping [field filmes] is being defaulted to: NOME.
+[EL Config]: metadata: 2019-08-07 14:43:42.497--ServerSession(336484883)--Thread(Thread[main,5,main])--The source foreign key column name for the many to many mapping [filmes] is being defaulted to: generos_NOME.
+[EL Config]: metadata: 2019-08-07 14:43:42.497--ServerSession(336484883)--Thread(Thread[main,5,main])--The target primary key column name for the many to many mapping [field filmes] is being defaulted to: TITULO.
+[EL Config]: metadata: 2019-08-07 14:43:42.497--ServerSession(336484883)--Thread(Thread[main,5,main])--The target foreign key column name for the many to many mapping [filmes] is being defaulted to: filmes_TITULO.
+[EL Config]: metadata: 2019-08-07 14:43:42.498--ServerSession(336484883)--Thread(Thread[main,5,main])--The join table name for the many to many mapping [field filmes] is being defaulted to: ATOR_FILME.
+[EL Config]: metadata: 2019-08-07 14:43:42.498--ServerSession(336484883)--Thread(Thread[main,5,main])--The source primary key column name for the many to many mapping [field filmes] is being defaulted to: NOME.
+[EL Config]: metadata: 2019-08-07 14:43:42.498--ServerSession(336484883)--Thread(Thread[main,5,main])--The source foreign key column name for the many to many mapping [filmes] is being defaulted to: atores_NOME.
+[EL Config]: metadata: 2019-08-07 14:43:42.498--ServerSession(336484883)--Thread(Thread[main,5,main])--The target primary key column name for the many to many mapping [field filmes] is being defaulted to: TITULO.
+[EL Config]: metadata: 2019-08-07 14:43:42.498--ServerSession(336484883)--Thread(Thread[main,5,main])--The target foreign key column name for the many to many mapping [filmes] is being defaulted to: filmes_TITULO.
+[EL Config]: metadata: 2019-08-07 14:43:42.503--ServerSession(336484883)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field cliente] is being defaulted to: CPF.
+[EL Config]: metadata: 2019-08-07 14:43:42.503--ServerSession(336484883)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [cliente] is being defaulted to: CLIENTE_CPF.
+[EL Config]: metadata: 2019-08-07 14:43:42.504--ServerSession(336484883)--Thread(Thread[main,5,main])--The join table name for the many to many mapping [field filmes] is being defaulted to: PEDIDO_FILME.
+[EL Config]: metadata: 2019-08-07 14:43:42.504--ServerSession(336484883)--Thread(Thread[main,5,main])--The source primary key column name for the many to many mapping [field filmes] is being defaulted to: CODPEDIDO.
+[EL Config]: metadata: 2019-08-07 14:43:42.504--ServerSession(336484883)--Thread(Thread[main,5,main])--The source foreign key column name for the many to many mapping [filmes] is being defaulted to: pedidos_CODPEDIDO.
+[EL Config]: metadata: 2019-08-07 14:43:42.504--ServerSession(336484883)--Thread(Thread[main,5,main])--The target primary key column name for the many to many mapping [field filmes] is being defaulted to: TITULO.
+[EL Config]: metadata: 2019-08-07 14:43:42.504--ServerSession(336484883)--Thread(Thread[main,5,main])--The target foreign key column name for the many to many mapping [filmes] is being defaulted to: filmes_TITULO.
+[EL Info]: 2019-08-07 14:43:42.597--ServerSession(336484883)--Thread(Thread[main,5,main])--EclipseLink, version: Eclipse Persistence Services - 2.7.3.v20180807-4be1041
+[EL Fine]: connection: 2019-08-07 14:43:42.683--Thread(Thread[main,5,main])--Detected database platform: org.eclipse.persistence.platform.database.PostgreSQLPlatform
+[EL Config]: connection: 2019-08-07 14:43:42.689--ServerSession(336484883)--Connection(324457684)--Thread(Thread[main,5,main])--connecting(DatabaseLogin(
 	platform=>PostgreSQLPlatform
 	user name=> "postgres"
 	datasource URL=> "jdbc:postgresql://localhost:5433/retroflix"
 ))
-[EL Config]: connection: 2019-08-06 18:41:26.731--ServerSession(1607627033)--Connection(121251480)--Thread(Thread[AWT-EventQueue-0,6,main])--Connected: jdbc:postgresql://localhost:5433/retroflix
+[EL Config]: connection: 2019-08-07 14:43:42.693--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--Connected: jdbc:postgresql://localhost:5433/retroflix
 	User: postgres
 	Database: PostgreSQL  Version: 9.6.14
 	Driver: PostgreSQL Native Driver  Version: PostgreSQL 9.4 JDBC4.2 (build 1206)
-[EL Info]: connection: 2019-08-06 18:41:26.76--ServerSession(1607627033)--Thread(Thread[AWT-EventQueue-0,6,main])--/file:/home/dynnah/Workspace/RetroflixJPA/target/classes/_retroflix-eclipselink login successful
-[EL Fine]: sql: 2019-08-06 18:41:40.751--ServerSession(1607627033)--Connection(121251480)--Thread(Thread[AWT-EventQueue-0,6,main])--SELECT CPF, CEP, EMAIL, NOME FROM CLIENTE WHERE (CPF = ?)
-	bind => [5454545]
-[EL Fine]: sql: 2019-08-06 18:41:40.759--ClientSession(837582662)--Connection(121251480)--Thread(Thread[AWT-EventQueue-0,6,main])--INSERT INTO CLIENTE (CPF, CEP, EMAIL, NOME) VALUES (?, ?, ?, ?)
-	bind => [5454545, 56445, hanna, Hanna]
+[EL Info]: connection: 2019-08-07 14:43:42.722--ServerSession(336484883)--Thread(Thread[main,5,main])--/file:/home/dynnah/Workspace/RetroflixJPA/target/classes/_retroflix-eclipselink login successful
+[EL Fine]: sql: 2019-08-07 14:43:42.891--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT NOME, DATANASC, NACIONALIDADE FROM ATOR WHERE NOME LIKE ?
+	bind => [%o%]
+[EL Fine]: sql: 2019-08-07 14:43:42.895--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT t1.TITULO, t1.LANCAMENTO, t1.PRECO FROM ATOR_FILME t0, FILME t1 WHERE ((t0.atores_NOME = ?) AND (t1.TITULO = t0.filmes_TITULO))
+	bind => [Tom Holland]
+[EL Fine]: sql: 2019-08-07 14:43:42.898--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT t1.NOME, t1.DATANASC, t1.NACIONALIDADE FROM ATOR_FILME t0, ATOR t1 WHERE ((t0.filmes_TITULO = ?) AND (t1.NOME = t0.atores_NOME))
+	bind => [Avengers: Endgame]
+[EL Fine]: sql: 2019-08-07 14:43:42.899--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT t1.TITULO, t1.LANCAMENTO, t1.PRECO FROM ATOR_FILME t0, FILME t1 WHERE ((t0.atores_NOME = ?) AND (t1.TITULO = t0.filmes_TITULO))
+	bind => [Mark Ruffalo]
+[EL Fine]: sql: 2019-08-07 14:43:42.9--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT t1.TITULO, t1.LANCAMENTO, t1.PRECO FROM ATOR_FILME t0, FILME t1 WHERE ((t0.atores_NOME = ?) AND (t1.TITULO = t0.filmes_TITULO))
+	bind => [Letitia Wright]
+[EL Fine]: sql: 2019-08-07 14:43:42.902--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT t1.NOME FROM GENERO_FILME t0, GENERO t1 WHERE ((t0.filmes_TITULO = ?) AND (t1.NOME = t0.generos_NOME))
+	bind => [Avengers: Endgame]
+[EL Fine]: sql: 2019-08-07 14:43:42.904--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT t1.TITULO, t1.LANCAMENTO, t1.PRECO FROM GENERO_FILME t0, FILME t1 WHERE ((t0.generos_NOME = ?) AND (t1.TITULO = t0.filmes_TITULO))
+	bind => [Ficcao cientifica]
+[EL Fine]: sql: 2019-08-07 14:43:42.905--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT t1.NOME, t1.DATANASC, t1.NACIONALIDADE FROM ATOR_FILME t0, ATOR t1 WHERE ((t0.filmes_TITULO = ?) AND (t1.NOME = t0.atores_NOME))
+	bind => [X-Men: Apocalypse]
+[EL Fine]: sql: 2019-08-07 14:43:42.906--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT t1.TITULO, t1.LANCAMENTO, t1.PRECO FROM ATOR_FILME t0, FILME t1 WHERE ((t0.atores_NOME = ?) AND (t1.TITULO = t0.filmes_TITULO))
+	bind => [Evan Peters]
+[EL Fine]: sql: 2019-08-07 14:43:42.907--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT t1.NOME FROM GENERO_FILME t0, GENERO t1 WHERE ((t0.filmes_TITULO = ?) AND (t1.NOME = t0.generos_NOME))
+	bind => [X-Men: Apocalypse]
+[EL Fine]: sql: 2019-08-07 14:43:42.908--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT t1.CODPEDIDO, t1.DATAPEDIDO, t1.STATUSPAGAMENTO, t1.CLIENTE_CPF FROM PEDIDO_FILME t0, PEDIDO t1 WHERE ((t0.filmes_TITULO = ?) AND (t1.CODPEDIDO = t0.pedidos_CODPEDIDO))
+	bind => [X-Men: Apocalypse]
+[EL Fine]: sql: 2019-08-07 14:43:42.909--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT CPF, CEP, EMAIL, NOME FROM CLIENTE WHERE (CPF = ?)
+	bind => [777.777.777-77]
+[EL Fine]: sql: 2019-08-07 14:43:42.911--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT CODPEDIDO, DATAPEDIDO, STATUSPAGAMENTO, CLIENTE_CPF FROM PEDIDO WHERE (CLIENTE_CPF = ?)
+	bind => [777.777.777-77]
+[EL Fine]: sql: 2019-08-07 14:43:42.912--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT t1.TITULO, t1.LANCAMENTO, t1.PRECO FROM PEDIDO_FILME t0, FILME t1 WHERE ((t0.pedidos_CODPEDIDO = ?) AND (t1.TITULO = t0.filmes_TITULO))
+	bind => [1]
+[EL Fine]: sql: 2019-08-07 14:43:42.913--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT t1.NOME, t1.DATANASC, t1.NACIONALIDADE FROM ATOR_FILME t0, ATOR t1 WHERE ((t0.filmes_TITULO = ?) AND (t1.NOME = t0.atores_NOME))
+	bind => [Spider-Man]
+[EL Fine]: sql: 2019-08-07 14:43:42.913--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT t1.NOME FROM GENERO_FILME t0, GENERO t1 WHERE ((t0.filmes_TITULO = ?) AND (t1.NOME = t0.generos_NOME))
+	bind => [Spider-Man]
+[EL Fine]: sql: 2019-08-07 14:43:42.914--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT t1.TITULO, t1.LANCAMENTO, t1.PRECO FROM GENERO_FILME t0, FILME t1 WHERE ((t0.generos_NOME = ?) AND (t1.TITULO = t0.filmes_TITULO))
+	bind => [Terror]
+[EL Fine]: sql: 2019-08-07 14:43:42.915--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT t1.CODPEDIDO, t1.DATAPEDIDO, t1.STATUSPAGAMENTO, t1.CLIENTE_CPF FROM PEDIDO_FILME t0, PEDIDO t1 WHERE ((t0.filmes_TITULO = ?) AND (t1.CODPEDIDO = t0.pedidos_CODPEDIDO))
+	bind => [Spider-Man]
+[EL Fine]: sql: 2019-08-07 14:43:42.916--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT CPF, CEP, EMAIL, NOME FROM CLIENTE WHERE (CPF = ?)
+	bind => [999.999.999-99]
+[EL Fine]: sql: 2019-08-07 14:43:42.916--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT CODPEDIDO, DATAPEDIDO, STATUSPAGAMENTO, CLIENTE_CPF FROM PEDIDO WHERE (CLIENTE_CPF = ?)
+	bind => [999.999.999-99]
+[EL Fine]: sql: 2019-08-07 14:43:42.917--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT t1.TITULO, t1.LANCAMENTO, t1.PRECO FROM PEDIDO_FILME t0, FILME t1 WHERE ((t0.pedidos_CODPEDIDO = ?) AND (t1.TITULO = t0.filmes_TITULO))
+	bind => [3]
+[EL Fine]: sql: 2019-08-07 14:43:42.918--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT t1.NOME, t1.DATANASC, t1.NACIONALIDADE FROM ATOR_FILME t0, ATOR t1 WHERE ((t0.filmes_TITULO = ?) AND (t1.NOME = t0.atores_NOME))
+	bind => [Captain Marvel]
+[EL Fine]: sql: 2019-08-07 14:43:42.919--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT t1.TITULO, t1.LANCAMENTO, t1.PRECO FROM ATOR_FILME t0, FILME t1 WHERE ((t0.atores_NOME = ?) AND (t1.TITULO = t0.filmes_TITULO))
+	bind => [Brie Larson]
+[EL Fine]: sql: 2019-08-07 14:43:42.921--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT t1.NOME, t1.DATANASC, t1.NACIONALIDADE FROM ATOR_FILME t0, ATOR t1 WHERE ((t0.filmes_TITULO = ?) AND (t1.NOME = t0.atores_NOME))
+	bind => [Room]
+[EL Fine]: sql: 2019-08-07 14:43:42.922--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT t1.NOME FROM GENERO_FILME t0, GENERO t1 WHERE ((t0.filmes_TITULO = ?) AND (t1.NOME = t0.generos_NOME))
+	bind => [Room]
+[EL Fine]: sql: 2019-08-07 14:43:42.923--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT t1.TITULO, t1.LANCAMENTO, t1.PRECO FROM GENERO_FILME t0, FILME t1 WHERE ((t0.generos_NOME = ?) AND (t1.TITULO = t0.filmes_TITULO))
+	bind => [Suspense]
+[EL Fine]: sql: 2019-08-07 14:43:42.924--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT t1.CODPEDIDO, t1.DATAPEDIDO, t1.STATUSPAGAMENTO, t1.CLIENTE_CPF FROM PEDIDO_FILME t0, PEDIDO t1 WHERE ((t0.filmes_TITULO = ?) AND (t1.CODPEDIDO = t0.pedidos_CODPEDIDO))
+	bind => [Room]
+[EL Fine]: sql: 2019-08-07 14:43:42.924--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT CPF, CEP, EMAIL, NOME FROM CLIENTE WHERE (CPF = ?)
+	bind => [888.888.888-88]
+[EL Fine]: sql: 2019-08-07 14:43:42.925--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT CODPEDIDO, DATAPEDIDO, STATUSPAGAMENTO, CLIENTE_CPF FROM PEDIDO WHERE (CLIENTE_CPF = ?)
+	bind => [888.888.888-88]
+[EL Fine]: sql: 2019-08-07 14:43:42.926--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT t1.TITULO, t1.LANCAMENTO, t1.PRECO FROM PEDIDO_FILME t0, FILME t1 WHERE ((t0.pedidos_CODPEDIDO = ?) AND (t1.TITULO = t0.filmes_TITULO))
+	bind => [2]
+[EL Fine]: sql: 2019-08-07 14:43:42.926--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT CPF, CEP, EMAIL, NOME FROM CLIENTE WHERE (CPF = ?)
+	bind => [333.333.333-33]
+[EL Fine]: sql: 2019-08-07 14:43:42.927--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT CODPEDIDO, DATAPEDIDO, STATUSPAGAMENTO, CLIENTE_CPF FROM PEDIDO WHERE (CLIENTE_CPF = ?)
+	bind => [333.333.333-33]
+[EL Fine]: sql: 2019-08-07 14:43:42.928--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT t1.TITULO, t1.LANCAMENTO, t1.PRECO FROM PEDIDO_FILME t0, FILME t1 WHERE ((t0.pedidos_CODPEDIDO = ?) AND (t1.TITULO = t0.filmes_TITULO))
+	bind => [4]
+[EL Fine]: sql: 2019-08-07 14:43:42.928--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT t1.NOME FROM GENERO_FILME t0, GENERO t1 WHERE ((t0.filmes_TITULO = ?) AND (t1.NOME = t0.generos_NOME))
+	bind => [Captain Marvel]
+[EL Fine]: sql: 2019-08-07 14:43:42.929--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT t1.CODPEDIDO, t1.DATAPEDIDO, t1.STATUSPAGAMENTO, t1.CLIENTE_CPF FROM PEDIDO_FILME t0, PEDIDO t1 WHERE ((t0.filmes_TITULO = ?) AND (t1.CODPEDIDO = t0.pedidos_CODPEDIDO))
+	bind => [Captain Marvel]
+[EL Fine]: sql: 2019-08-07 14:43:42.93--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT CPF, CEP, EMAIL, NOME FROM CLIENTE WHERE (CPF = ?)
+	bind => [555.555.555-55]
+[EL Fine]: sql: 2019-08-07 14:43:42.931--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT CODPEDIDO, DATAPEDIDO, STATUSPAGAMENTO, CLIENTE_CPF FROM PEDIDO WHERE (CLIENTE_CPF = ?)
+	bind => [555.555.555-55]
+[EL Fine]: sql: 2019-08-07 14:43:42.932--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT t1.TITULO, t1.LANCAMENTO, t1.PRECO FROM PEDIDO_FILME t0, FILME t1 WHERE ((t0.pedidos_CODPEDIDO = ?) AND (t1.TITULO = t0.filmes_TITULO))
+	bind => [5]
+[EL Fine]: sql: 2019-08-07 14:43:42.933--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT t1.CODPEDIDO, t1.DATAPEDIDO, t1.STATUSPAGAMENTO, t1.CLIENTE_CPF FROM PEDIDO_FILME t0, PEDIDO t1 WHERE ((t0.filmes_TITULO = ?) AND (t1.CODPEDIDO = t0.pedidos_CODPEDIDO))
+	bind => [Avengers: Endgame]
+[EL Fine]: sql: 2019-08-07 14:43:42.949--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT t1.TITULO, t1.LANCAMENTO, t1.PRECO FROM PEDIDO_FILME t3, CLIENTE t2, FILME t1, PEDIDO t0 WHERE ((t0.CLIENTE_CPF = ?) AND (((t3.filmes_TITULO = t1.TITULO) AND (t0.CODPEDIDO = t3.pedidos_CODPEDIDO)) AND (t2.CPF = t0.CLIENTE_CPF)))
+	bind => [777.777.777-77]
+[EL Fine]: sql: 2019-08-07 14:43:42.959--ServerSession(336484883)--Connection(201576232)--Thread(Thread[main,5,main])--SELECT t0.NOME FROM FILME t1 LEFT OUTER JOIN (GENERO_FILME t4 JOIN GENERO t0 ON (t0.NOME = t4.generos_NOME)) ON (t4.filmes_TITULO = t1.TITULO), ATOR_FILME t3, ATOR t2 WHERE ((t2.NOME = ?) AND ((t3.filmes_TITULO = t1.TITULO) AND (t2.NOME = t3.atores_NOME)))
+	bind => [Tom Holland]
