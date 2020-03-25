@@ -9,7 +9,7 @@
 </p>
 
 <h3 align="center">
-  Programação Web I - Exercises 
+  Retroflix JPA
 </h3>
 
 <h5 align="center"> Made by <a href="https://github.com/dynnah">Dynnah Hanna </a> & <a href="https://github.com/georgegomesq">George Gomes</a></h2>
